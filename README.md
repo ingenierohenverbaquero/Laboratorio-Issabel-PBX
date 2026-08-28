@@ -21,21 +21,7 @@ Simulación de una central telefónica empresarial (Claro) usando **Issabel PBX*
 
 ## Arquitectura
 
-```
-┌─────────────────────┐        ┌───────────────────────────────┐
-│   PC (Windows)       │        │     VM Issabel PBX (Hyper-V)   │
-│   Hyper-V Manager     │  NAT/  │  Rocky Linux 8 + Asterisk 18   │
-│   Conmutador Externo ├───────►│  IP: 10.86.201.119              │
-│   (tethering USB)     │  red   │  Apache (PHP 7.4) + Roundcube   │
-└─────────┬─────────────┘        │  (PHP 8.1, en paralelo)         │
-          │                      └───────────────┬─────────────────┘
-          │ WiFi (hotspot)                        │
-┌─────────▼─────────┐                    ┌────────▼─────────┐
-│  Celular A          │                    │  Celular B         │
-│  Softphone (Linphone)│                   │  Softphone (Linphone)│
-│  Ext. móvil (203)     │                   │  Ext. Cliente (204)  │
-└─────────────────────┘                    └───────────────────┘
-```
+![Diagrama de arquitectura: PC con Hyper-V, VM de Issabel PBX, y dos celulares con Linphone registrados por SIP](capturas/00-arquitectura/arquitectura.png)
 
 - **Hipervisor:** Hyper-V (Windows)
 - **Sistema operativo del PBX:** Rocky Linux 8.8 (incluido en el instalador de Issabel)
