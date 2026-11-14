@@ -40,7 +40,7 @@ Simulación de una central telefónica empresarial (Claro) usando **Issabel PBX*
 | 2 | Extensión móvil (recibe la llamada al pasar la extensión → celular) | ✅ Follow Me |
 | 3 | Operadora propia programada (no la default) | ✅ IVR con 5 opciones |
 | 4 | Permitir videollamada | ✅ |
-| 5 | Configuración externa (trunk) | ⏭️ Omitido (indicación del docente) |
+| 5 | Configuración externa (trunk) | ⏭️ Omitido |
 | 6 | Buzón de voz | ✅ Con saludo personalizado en español |
 | 7 | Correo electrónico con dominio propio | ✅ Envío y recepción, con adjunto de audio |
 | 8 | Monitoría del PBX | ✅ CDR Report |
